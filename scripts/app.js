@@ -20,3 +20,9 @@ loadSection('home', 'sections/home.html', 'css/home.css');
 loadSection('about', 'sections/about.html', 'css/about.css');
 loadSection('services', 'sections/services.html', 'css/services.css');
 loadSection('contact', 'sections/contact.html', 'css/contact.css');
+
+// Función para mostrar/ocultar el menú de WhatsApp
+function toggleWhatsAppMenu() {
+    const menu = document.getElementById('whatsappMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+}
