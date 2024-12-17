@@ -6,33 +6,53 @@
     <title>SeinPro</title>
     <link rel="stylesheet" href="css/main.css">
 
-     <!-- Google font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
- 
-     <!-- Material symbols rounded -->
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Material symbols rounded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/logo.jpeg" alt="Logo">
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#home">Inicio</a></li>
+                <div class="line"></div>
+                <li><a href="#about">Nosotros</a></li>
+                <div class="line"></div>
+                <li><a href="#services">Servicios</a></li>
+                <div class="line"></div>
+                <li><a href="#contact">Contáctanos</a></li>
+            </ul>
+            <div class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-
+    
     <div id="home"></div>
     <div id="about"></div>
     <div id="services"></div>
     <div id="contact"></div>
 
-    <footer>
-        <p>&copy; 2024 SeinPro</p>
-    </footer>
-
 </body>
+
+<footer>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+    <p>© 2024 SeinPro</p>
+    </div>
+</footer>
+
 <script src="scripts/app.js"></script>
+<script src="scripts/navbar.js"></script>
 </html>
