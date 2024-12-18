@@ -42,6 +42,37 @@
     <div id="services"></div>
     <div id="contact"></div>
 
+    <!-- Botón de WhatsApp -->
+    <div class="whatsapp-container">
+        <div class="whatsapp-button" onclick="toggleWhatsAppMenu()">
+            <img src="assets/whatsapp.png" alt="WhatsApp">
+        </div>
+        <div class="whatsapp-menu" id="whatsappMenu">
+            <div class="whatsapp-header">
+                <p>¿Quieres comunicarte con nosotros?</p>
+                <span>¡Contáctanos!</span>
+            </div>
+            <div class="whatsapp-links">
+                <a href="https://wa.me/+51978118453?text=Hola%20SeinPro,%20estoy%20interesado%20en%20saber%20más"
+                    target="_blank">
+                    👋 Hola SeinPro, estoy interesado en saber más.
+                </a>
+                <a href="https://wa.me/+51978118453?text=Quisiera%20agendar%20una%20cita%20con%20ustedes" target="_blank">
+                    📅 Quisiera agendar una cita con ustedes.
+                </a>
+                <a href="https://wa.me/+51978118453?text=Me%20gustaría%20conocer%20sus%20servicios" target="_blank">
+                    📋 Me gustaría conocer sus servicios y productos.
+                </a>
+            </div>
+            <div class="whatsapp-input">
+                <input type="text" id="customMessage" placeholder="Escribe tu mensaje aquí..." />
+                <button onclick="sendCustomMessage()">
+                    <img src="assets/send.webp" alt="Enviar" />
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <footer>
@@ -55,4 +86,5 @@
 
 <script src="scripts/app.js"></script>
 <script src="scripts/navbar.js"></script>
+<script src="scripts/whatsapp.js"></script>
 </html>
