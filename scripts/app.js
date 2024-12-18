@@ -43,3 +43,17 @@ function adjustWhatsAppButton() {
 
 // Ejecutar al cargar la página y en cada scroll
 window.addEventListener('scroll', adjustWhatsAppButton);
+
+//Custom message
+function sendCustomMessage() {
+    const customMessage = document.getElementById("customMessage").value.trim();
+    const phoneNumber = "+51978118453";
+
+    if (customMessage) {
+        // Construye el enlace de WhatsApp con el mensaje personalizado
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(customMessage)}`;
+        window.open(whatsappLink, "_blank");
+    } else {
+        alert("Por favor, escribe un mensaje antes de enviar.");
+    }
+}

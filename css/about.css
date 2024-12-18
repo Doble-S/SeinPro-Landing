@@ -6,36 +6,36 @@
 }
 
 .about-us-box {
-    flex: 1; /* Ocupa igual espacio entre Misión y Visión */
+    flex: 1; 
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Asegura un layout correcto */
-    justify-content: center; /* Centra verticalmente el contenido */
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    flex-direction: column;
+    justify-content: center;
+    height: auto; 
     margin-bottom: 30px;
 }
 
 .about-us-box h2 {
-    margin-top: 0; /* Elimina margen superior */
-    margin-bottom: 10px; /* Espacio entre título y texto */
+    margin-top: 0; 
+    margin-bottom: 10px; 
 }
 
 .about-container {
-    display: flex; /* Flexbox principal */
+    display: flex; 
     justify-content: space-between;
-    align-items: center; /* Centra verticalmente */
+    align-items: center;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-image {
-    flex: 1; /* Ocupa 1 parte del espacio */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
+    justify-content: center; 
 }
 
 .about-image img {
@@ -48,7 +48,7 @@
 }
 
 .about-content {
-    flex: 2; /* Ocupa 2 partes del espacio */
+    flex: 2; 
 }
 
 .about-content h2 {
@@ -66,18 +66,18 @@
     line-height: 1.8;
     margin-bottom: 30px;
     text-align: center;
-    margin: 0; /* Elimina márgenes innecesarios */
+    margin: 0; 
 }
 
 .about-values {
     display: flex;
     justify-content: center;
     gap: 20px;
-    text-align: center; /* Centra el texto en las cajas */
+    text-align: center; 
 }
 
 .about-box {
-    flex: 1; /* Ocupa igual espacio entre Misión y Visión */
+    flex: 1; 
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
@@ -99,11 +99,11 @@
 /* Responsivo */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* Apila la imagen y contenido */
+        flex-direction: column; 
         text-align: center;
     }
 
     .about-values {
-        flex-direction: column; /* Apila Misión y Visión */
+        flex-direction: column;
     }
 }

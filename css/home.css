@@ -2,9 +2,6 @@
     position: relative;
     width: 100%;
     height: 100vh; /* Hace que la imagen ocupe todo el alto de la pantalla */
-    display: flex;
-    justify-content: flex-start; /* Alinea el contenido a la derecha */
-    align-items: center; /* Centra verticalmente el contenido */
 }
 
 .background-image {
@@ -18,21 +15,18 @@
 }
 
 .content {
+    position: absolute; /* Posiciona el contenido respecto a la imagen */
+    bottom: 20px; /* Ubica el contenido a 20px del borde inferior */
+    left: 20px; /* Ubica el contenido a 20px del borde izquierdo */
     text-align: left;
-    color: rgb(255, 255, 255); /* Cambia el color del texto según tu preferencia */
-    padding: 50px;
+    color: white; /* Cambia el color del texto según tu preferencia */
+    z-index: 1; /* Asegura que el contenido esté encima de la imagen */
 }
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
-    margin-top: 500px;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 button {
@@ -52,7 +46,7 @@ button:hover {
     background-color: #103e6f;
 }
 
-.about{
+.about {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -69,8 +63,10 @@ button:hover {
 /* Responsivo */
 @media (max-width: 1500px) {
     h2 {
-        font-size: 2rem;
-        margin-top: 250px;
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 0.9rem;
     }
     .about p {
         font-size: 1.5rem;
